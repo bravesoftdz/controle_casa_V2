@@ -81,7 +81,7 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(PrincipalActivity.this, LuzesActivity.class);
+				Intent i = new Intent(MainActivity.this, LuzesActivity.class);
 				startActivity(i);
 			}
 		});
@@ -93,7 +93,7 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(PrincipalActivity.this, ConfiguracaoActivity.class);
+				Intent i = new Intent(MainActivity.this, ConfiguracaoActivity.class);
 				startActivity(i);
 			}
 		});
@@ -105,7 +105,7 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(PrincipalActivity.this, TelevisaoActivity.class);
+				Intent i = new Intent(MainActivity.this, TelevisaoActivity.class);
 				startActivity(i);
 			}
 		});
@@ -117,7 +117,7 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(PrincipalActivity.this, ArCondicionadoActivity.class);
+				Intent i = new Intent(MainActivity.this, ArCondicionadoActivity.class);
 				startActivity(i);
 			}
 		});
@@ -129,7 +129,7 @@ public class MainActivity extends Activity {
 			
 			@Override
 			public void onClick(View v) {
-				Intent i = new Intent(PrincipalActivity.this, ConsumoEnergiaActivity.class);
+				Intent i = new Intent(MainActivity.this, ConsumoEnergiaActivity.class);
 				startActivity(i);
 			}
 		});
