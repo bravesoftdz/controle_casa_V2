@@ -7,7 +7,8 @@
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -30,6 +31,18 @@
         <activity
             android:name=".LuzesActivity"
             android:label="@string/title_activity_luzes" >
+        </activity>
+        <activity
+            android:name=".ConsumoEnergiaActivity"
+            android:label="@string/title_activity_consumo_energia" >
+        </activity>
+        <activity
+            android:name=".TelevisaoActivity"
+            android:label="@string/title_activity_televisao" >
+        </activity>
+        <activity
+            android:name=".ArCondicionadoActivity"
+            android:label="@string/title_activity_ar_condicionado" >
         </activity>
     </application>
 

@@ -27,9 +27,9 @@
     <string name="title_activity_ar_condicionado">Ar Condicionado</string>
     <string name="title_activity_configuracao">Configuração</string>
     <string name="title_activity_consumo_energia">Consumo de Energia</string>
-    
     <string name="txtUrl">URL</string>
     <string name="btnSalvar">Salvar</string>
     <string name="btnCancelar">Cancelar</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

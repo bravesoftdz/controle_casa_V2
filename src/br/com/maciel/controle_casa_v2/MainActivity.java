@@ -17,7 +17,6 @@ import br.com.maciel.controle_casa_v2.ArCondicionadoActivity;
 import br.com.maciel.controle_casa_v2.ConfiguracaoActivity;
 import br.com.maciel.controle_casa_v2.ConsumoEnergiaActivity;
 import br.com.maciel.controle_casa_v2.LuzesActivity;
-import br.com.maciel.controle_casa_v2.PrincipalActivity;
 import br.com.maciel.controle_casa_v2.R;
 import br.com.maciel.controle_casa_v2.TelevisaoActivity;
 
