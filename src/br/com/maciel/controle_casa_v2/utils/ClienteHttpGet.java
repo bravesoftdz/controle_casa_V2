@@ -3,14 +3,11 @@ package br.com.maciel.controle_casa_v2.utils;
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URL;
-
-//import org.apache.http.client.HttpClient;
-//import org.apache.http.client.methods.HttpGet;
-//import org.apache.http.impl.client.DefaultHttpClient;
 
 public class ClienteHttpGet implements Runnable {
 
@@ -21,7 +18,11 @@ public class ClienteHttpGet implements Runnable {
      */
     public ClienteHttpGet(String urlParam) {
         super();
-        url = new URL(urlParam);
+        try {
+            url = new URL(urlParam);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
         //System.out.println("url="+url);
         Thread t = new Thread(this);
         t.start();
@@ -38,7 +39,14 @@ public class ClienteHttpGet implements Runnable {
             urlConnection = (HttpURLConnection) url.openConnection();
 
             InputStream in = new BufferedInputStream(urlConnection.getInputStream());
-            readStream(in);
+
+            InputStreamReader isw = new InputStreamReader(in);
+            int data = isw.read();
+            while (data != -1) {
+                char current = (char) data;
+                data = isw.read();
+                System.out.print(current);
+            }
 
            /* HttpClient cliente = new DefaultHttpClient();
         HttpGet requiscao = new HttpGet();
@@ -51,7 +59,9 @@ public class ClienteHttpGet implements Runnable {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            urlConnection.disconnect();
+            if (urlConnection != null) {
+                urlConnection.disconnect();
+            }
         }
 
     }
