@@ -4,13 +4,28 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class TelevisaoActivity extends Activity {
+
+	private Button btnDesligarLigar;
+	private Button btnCanalMais;
+	private Button btnCanalMenos;
+	private Button btnVolumeMais;
+	private Button btnVolumeMenos;
+	private Button btnDigitarCanal;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_televisao);
+
+		btnDesligarLigar = (Button) findViewById(R.id.btnDesligarLigar);
+		btnCanalMais = (Button) findViewById(R.id.btnCanalMais);
+		btnCanalMenos = (Button) findViewById(R.id.btnCanalMenos);
+		btnVolumeMais = (Button) findViewById(R.id.btnVolumeMais);
+		btnVolumeMenos = (Button) findViewById(R.id.btnVolumeMenos);
+		btnDigitarCanal = (Button) findViewById(R.id.btnDigitarCanal);
 	}
 
 	@Override

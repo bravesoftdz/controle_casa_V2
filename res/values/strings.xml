@@ -31,5 +31,11 @@
     <string name="btnSalvar">Salvar</string>
     <string name="btnCancelar">Cancelar</string>
     <string name="hello_world">Hello world!</string>
+    <string name="botao_volumemais">Volume +</string>
+    <string name="botao_volumemenos">Volume -</string>
+    <string name="botao_CanalMenos">Canal -</string>
+    <string name="botao_CanalMais">Canal +</string>
+    <string name="botao_DesligarLigar">Desligar/Ligar</string>
+    <string name="botao_DigitarCanal">Digitar Canal</string>
 
 </resources>

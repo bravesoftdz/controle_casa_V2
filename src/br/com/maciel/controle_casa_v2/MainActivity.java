@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
 	private void metodosBotoes() {
 
 		/**
-		 * Método do Botão de "Comando de Voz"
+		 * MÃ©todo do BotÃ£o de "Comando de Voz"
 		 */
 		btnComandoVoz.setOnClickListener(new View.OnClickListener() {
 
@@ -66,7 +66,7 @@ public class MainActivity extends Activity {
 				} catch (ActivityNotFoundException a) {
 					Toast t = Toast.makeText(
 									getApplicationContext(),
-									"Ops! Seu dispositivo não suporta Comando por Voz.",
+									"Ops! Seu dispositivo nÃ£o suporta Comando por Voz.",
 									Toast.LENGTH_SHORT);
 					t.show();
 				}
@@ -74,7 +74,7 @@ public class MainActivity extends Activity {
 		});
 		
 		/**
-		 * Método para abrir um novo layout
+		 * Metodo para abrir um novo layout
 		 */
 		btnLuzes.setOnClickListener(new View.OnClickListener() {
 			
@@ -86,7 +86,7 @@ public class MainActivity extends Activity {
 		});
 		
 		/**
-		 * Método para abrir um novo layout
+		 * Metodo para abrir um novo layout
 		 */
 		btnConfiguracao.setOnClickListener(new View.OnClickListener() {
 			
@@ -98,7 +98,7 @@ public class MainActivity extends Activity {
 		});
 		
 		/**
-		 * Método para abrir um novo layout
+		 * Metodo para abrir um novo layout
 		 */
 		btnTelevisao.setOnClickListener(new View.OnClickListener() {
 			
@@ -110,7 +110,7 @@ public class MainActivity extends Activity {
 		});
 		
 		/**
-		 * Método para abrir um novo layout
+		 * Metodo para abrir um novo layout
 		 */
 		btnArCondicionado.setOnClickListener(new View.OnClickListener() {
 			
@@ -122,7 +122,7 @@ public class MainActivity extends Activity {
 		});
 		
 		/**
-		 * Método para abrir um novo layout
+		 * Metodo para abrir um novo layout
 		 */
 		btnConsumoEnergia.setOnClickListener(new View.OnClickListener() {
 			
@@ -177,44 +177,44 @@ public class MainActivity extends Activity {
 	
 	private void executarComandoVoz(String comando){		
 		
-		if (comando.equalsIgnoreCase("ligar lâmpada sala") || 
-				comando.equalsIgnoreCase("ligar lâmpada da sala")){
+		if (comando.equalsIgnoreCase("ligar lï¿½mpada sala") || 
+				comando.equalsIgnoreCase("ligar lï¿½mpada da sala")){
 			clienteHttp =  new ClienteHttpGet("http://192.168.0.155:8090/?CMD=LAMSALAON");
-		} else if (comando.equalsIgnoreCase("ligar lâmpada do quarto 1") ||
-				comando.equalsIgnoreCase("ligar lâmpada quarto 1")){
+		} else if (comando.equalsIgnoreCase("ligar lï¿½mpada do quarto 1") ||
+				comando.equalsIgnoreCase("ligar lï¿½mpada quarto 1")){
 			clienteHttp =  new ClienteHttpGet("http://192.168.0.155:8090/?CMD=LAMQUA01ON");
-		} else if (comando.equalsIgnoreCase("ligar lâmpada do quarto 2") ||
-				comando.equalsIgnoreCase("ligar lâmpada quarto 2")){
+		} else if (comando.equalsIgnoreCase("ligar lï¿½mpada do quarto 2") ||
+				comando.equalsIgnoreCase("ligar lï¿½mpada quarto 2")){
 			clienteHttp =  new ClienteHttpGet("http://192.168.0.155:8090/?CMD=LAMQUA02ON");
-		} else if (comando.equalsIgnoreCase("ligar lâmpada do rau") ||
-				comando.equalsIgnoreCase("ligar lâmpada rau")){
+		} else if (comando.equalsIgnoreCase("ligar lï¿½mpada do rau") ||
+				comando.equalsIgnoreCase("ligar lï¿½mpada rau")){
 			clienteHttp =  new ClienteHttpGet("http://192.168.0.155:8090/?CMD=LAMHALLON");
-		} else if (comando.equalsIgnoreCase("ligar lâmpada do banheiro") ||
-				comando.equalsIgnoreCase("ligar lâmpada banheiro")){
+		} else if (comando.equalsIgnoreCase("ligar lï¿½mpada do banheiro") ||
+				comando.equalsIgnoreCase("ligar lï¿½mpada banheiro")){
 			clienteHttp =  new ClienteHttpGet("http://192.168.0.155:8090/?CMD=LAMBANON");
-		} else if (comando.equalsIgnoreCase("ligar lâmpada da cozinha") ||
-				comando.equalsIgnoreCase("ligar lâmpada cozinha")){
+		} else if (comando.equalsIgnoreCase("ligar lï¿½mpada da cozinha") ||
+				comando.equalsIgnoreCase("ligar lï¿½mpada cozinha")){
 			clienteHttp =  new ClienteHttpGet("http://192.168.0.155:8090/?CMD=LAMCOZON");
-		} else if (comando.equalsIgnoreCase("desligar lâmpada sala") || 
-				comando.equalsIgnoreCase("desligar lâmpada da sala")){
+		} else if (comando.equalsIgnoreCase("desligar lï¿½mpada sala") || 
+				comando.equalsIgnoreCase("desligar lï¿½mpada da sala")){
 			clienteHttp =  new ClienteHttpGet("http://192.168.0.155:8090/?CMD=LAMSALAOFF");
-		} else if (comando.equalsIgnoreCase("desligar lâmpada do quarto 1") ||
-				comando.equalsIgnoreCase("desligar lâmpada quarto 1")){
+		} else if (comando.equalsIgnoreCase("desligar lï¿½mpada do quarto 1") ||
+				comando.equalsIgnoreCase("desligar lï¿½mpada quarto 1")){
 			clienteHttp =  new ClienteHttpGet("http://192.168.0.155:8090/?CMD=LAMQUA01OFF");
-		} else if (comando.equalsIgnoreCase("desligar lâmpada do quarto 2") ||
-				comando.equalsIgnoreCase("desligar lâmpada quarto 2")){
+		} else if (comando.equalsIgnoreCase("desligar lï¿½mpada do quarto 2") ||
+				comando.equalsIgnoreCase("desligar lï¿½mpada quarto 2")){
 			clienteHttp =  new ClienteHttpGet("http://192.168.0.155:8090/?CMD=LAMQUA02OFF");
-		} else if (comando.equalsIgnoreCase("desligar lâmpada do rau") ||
-				comando.equalsIgnoreCase("desligar lâmpada rau")){
+		} else if (comando.equalsIgnoreCase("desligar lï¿½mpada do rau") ||
+				comando.equalsIgnoreCase("desligar lï¿½mpada rau")){
 			clienteHttp =  new ClienteHttpGet("http://192.168.0.155:8090/?CMD=LAMHALLOFF");
-		} else if (comando.equalsIgnoreCase("desligar lâmpada do banheiro") ||
-				comando.equalsIgnoreCase("desligar lâmpada banheiro")){
+		} else if (comando.equalsIgnoreCase("desligar lï¿½mpada do banheiro") ||
+				comando.equalsIgnoreCase("desligar lï¿½mpada banheiro")){
 			clienteHttp =  new ClienteHttpGet("http://192.168.0.155:8090/?CMD=LAMBANOFF");
-		} else if (comando.equalsIgnoreCase("desligar lâmpada da cozinha") ||
-				comando.equalsIgnoreCase("desligar lâmpada cozinha")){
+		} else if (comando.equalsIgnoreCase("desligar lï¿½mpada da cozinha") ||
+				comando.equalsIgnoreCase("desligar lï¿½mpada cozinha")){
 			clienteHttp =  new ClienteHttpGet("http://192.168.0.155:8090/?CMD=LAMCOZOFF");
 		} else {
-			Toast.makeText(getApplicationContext(), "Comando não reconhecido", Toast.LENGTH_LONG).show();
+			Toast.makeText(getApplicationContext(), "Comando nï¿½o reconhecido", Toast.LENGTH_LONG).show();
 		}
 	}
 }

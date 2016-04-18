@@ -8,9 +8,70 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="br.com.maciel.controle_casa_v2.TelevisaoActivity" >
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:text="@string/botao_volumemais"
+        android:id="@+id/btnVolumeMais"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_volumemenos"
+        android:id="@+id/btnVolumeMenos"
+        android:layout_below="@+id/btnVolumeMais"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_CanalMenos"
+        android:id="@+id/btnCanalMenos"
+        android:layout_below="@+id/btnCanalMais"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_CanalMais"
+        android:id="@+id/btnCanalMais"
+        android:layout_below="@+id/btnVolumeMenos"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_DesligarLigar"
+        android:id="@+id/btnDesligarLigar"
+        android:layout_below="@+id/btnCanalMenos"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_DigitarCanal"
+        android:id="@+id/btnDigitarCanal"
+        android:layout_below="@+id/btnDesligarLigar"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:singleLine="true" />
 </RelativeLayout>

@@ -15,7 +15,8 @@
         android:layout_x="5dp"
         android:layout_y="95dp"
         android:textOff="@string/botao_lampadaSalaDesligada"
-        android:textOn="@string/botao_lampadaSalaLigada" />
+        android:textOn="@string/botao_lampadaSalaLigada"
+        android:checked="false" />
 
     <ToggleButton
         android:id="@+id/tgbtnLampadaCozinha"
