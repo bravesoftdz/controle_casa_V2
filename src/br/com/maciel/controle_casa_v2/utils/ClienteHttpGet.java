@@ -43,7 +43,7 @@ public class ClienteHttpGet implements Runnable {
            /* HttpClient cliente = new DefaultHttpClient();
         HttpGet requiscao = new HttpGet();
         try {
-            requiscao.setURI(new URI(url));
+            requiscao.setURI(new URI(url)); s
             cliente.execute(requiscao);
         } catch (Exception e) {
             e.printStackTrace();
